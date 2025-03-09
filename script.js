@@ -33,5 +33,5 @@ function scrollAchievements() {
     });
 }
 
-// Auto-scroll achievements every 5 seconds
+// Auto-scroll every 5 seconds
 setInterval(scrollAchievements, 5000);

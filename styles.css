@@ -80,32 +80,23 @@ p, li {
 /* Achievements Carousel */
 .achievements-grid {
     display: flex;
-    overflow-x: scroll; /* Enables horizontal scrolling */
-    gap: 25px; /* Space between items */
+    overflow-x: scroll;
+    gap: 25px;
     margin-top: 25px;
-    scroll-behavior: smooth; /* Smooth scrolling effect */
-    scroll-snap-type: x mandatory; /* Snaps to each item */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .achievement-item {
-    min-width: 280px; /* Fixed width for each item */
-    flex-shrink: 0; /* Prevents items from shrinking */
+    min-width: 280px;
+    flex-shrink: 0;
     text-align: center;
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 12px;
     transition: transform 0.3s, box-shadow 0.3s;
-    scroll-snap-align: start; /* Aligns each item to the start of the scroll */
-}
-
-.achievement-item img {
-    width: 100%; /* Fills the item width */
-    height: 420px; /* Fixed height for all images */
-    object-fit: cover; /* Crops images to fit without distortion */
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
 }
 
 .achievement-item:hover {
@@ -113,42 +104,22 @@ p, li {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Form */
+.achievement-item img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info */
 .contact-info {
     text-align: center;
     margin-top: 50px;
     padding: 25px;
     background-color: #f5f9ff;
     border-radius: 12px;
-}
-
-.contact-info form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto 20px;
-}
-
-.contact-info input, .contact-info textarea {
-    padding: 10px;
-    border: 1px solid #8A9A5B;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.contact-info button {
-    padding: 10px;
-    background-color: #8A9A5B;
-    color: #FFF8E7;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-info button:hover {
-    background-color: #6B7A47;
 }
 
 .contact-info a {
@@ -246,6 +217,33 @@ ul li:before {
     left: 0;
     color: #8A9A5B;
     font-weight: bold;
+}
+
+/* Certificate Link Styling */
+.certificate-link {
+    font-size: 14px;
+    color: #8A9A5B;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.certificate-link:hover {
+    color: #6B7A47;
+    text-decoration: underline;
+}
+
+/* Lichess Link Styling */
+.section ul li a {
+    color: #6B7A47; /* Darker muted green */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.section ul li a:hover {
+    color: #8A9A5B; /* Muted green */
+    text-decoration: underline;
 }
 
 /* Responsive Adjustments */

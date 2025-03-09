@@ -6,6 +6,8 @@
     <title>Anik Dey Shaon - Biodata</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet">
+    <!-- Fancybox CSS for lightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 </head>
 <body>
     <div class="container">
@@ -23,7 +25,7 @@
         </div>
 
         <h1>Anik Dey Shaon</h1>
-        <p class="tagline">Tech enthusiast with a heart for adventure and a love for deep conversations</p>
+        <p class="tagline">Programmer with a heart for adventure and a love for deep conversations</p>
         
         <div class="quote-container">
             <blockquote>
@@ -48,19 +50,21 @@
         <!-- Personal Information -->
         <div class="section">
             <h2>The Basics</h2>
-            <p><strong>Date of Birth:</strong> 30 May, 1995 (I've had enough birthdays to know cake doesn't solve everything)</p>
+            <p><strong>Date of Birth:</strong> 30 May, 1995 (Old enough to know better, young enough to do it anyway)</p>
             <p><strong>Height:</strong> 5'3" (Perfect for reaching the bottom shelf without bending)</p>
             <p><strong>Address:</strong> Baroigram, Barlekha, Moulvibazar, Bangladesh (Where the WiFi is decent and the tea is excellent)</p>
         </div>
+
 
         <!-- Education -->
         <div class="section">
             <h2>Academic Adventures</h2>
             <ul>
-                <li><strong>S.S.C:</strong> 2012, P.C High School (Where I learned to solve equations but not life's problems)</li>
+                <li><strong>S.S.C:</strong> 2012, P.C High School (A place I learned numbers and the art of lifelong friendships.)</li>
                 <li><strong>H.S.C:</strong> 2014, Barlekha Degree College (When I thought college would be like in the movies. It wasn't.)</li>
                 <li><strong>B.Sc. (Engg.):</strong> 2020, Computer Science & Engineering, University of Chittagong (Four years of turning tea into code)</li>
-                <li><strong>IELTS:</strong> Overall 8.0 (No band less than 7.0) (I speak English better than I understand humans)</li>
+                <li><strong>IELTS:</strong> Overall 8.0 (No band less than 7.0) (My English is better than my understanding of humans) 
+                    <a href="photos/ielts_certificate.pdf" class="certificate-link" data-fancybox="certificates">View Certificate</a></li>
                 <li><strong>Upcoming:</strong> Will appear in 44th BCS Viva (Wish me luck or send tea)</li>
             </ul>
         </div>
@@ -72,11 +76,13 @@
             <div class="achievements-grid">
                 <div class="achievement-item">
                     <img src="photos/math_olympiad_2012.jpg" alt="Math Olympiad 2012 Medal">
-                    <p>Champion, Secondary Category, Sylhet Division, Bangladesh Mathematical Olympiad, 2012</p>
+                    <p>Champion, Secondary Category, Sylhet Division, Bangladesh Mathematical Olympiad, 2012 
+                        <a href="photos/math_olympiad_2012_certificate.pdf" class="certificate-link" data-fancybox="certificates">View Certificate</a></p>
                 </div>
                 <div class="achievement-item">
                     <img src="photos/math_olympiad_2013.jpg" alt="Math Olympiad 2013 Medal">
-                    <p>1st Runner-Up, Higher Secondary Category, Sylhet Division, Bangladesh Mathematical Olympiad, 2013</p>
+                    <p>1st Runner-Up, Higher Secondary Category, Sylhet Division, Bangladesh Mathematical Olympiad, 2013 
+                        <a href="photos/math_olympiad_2013_certificate.pdf" class="certificate-link" data-fancybox="certificates">View Certificate</a></p>
                 </div>
                 <div class="achievement-item">
                     <img src="photos/edu_contest_2018.jpg" alt="EDU Contest 2018 Medal">
@@ -105,7 +111,7 @@
         <!-- Family -->
         <div class="section">
             <h2>The People Who Have To Put Up With Me</h2>
-            <p><strong>Father:</strong> Ajit Kumar Dey (Businessman, Professional Dad-Joke Specialist)</p>
+            <p><strong>Father:</strong> Ajit Kumar Dey (Businessman, A man of action, not words, in business and beyond.)</p>
             <p><strong>Mother:</strong> Swapna Rani Datta (Housewife, Expert at finding things I swear weren't there a minute ago)</p>
             <p><strong>Siblings:</strong></p>
             <ul>
@@ -114,8 +120,8 @@
             </ul>
             <p><strong>Notable Relatives:</strong></p>
             <ul>
-                <li>Polash Ranjan Dey (Cousin) - Additional Police Super, Bangladesh Police</li>
-                <li>Aditi Dey Tithi (Cousin) - Assistant Researcher, Rensselaer Polytechnic Institute, New York, USA</li>
+                <li>Polash Ranjan Dey (Cousin) - Additional Police Super, Bangladesh Police (A useful contact in case I ever get into trouble.)</li>
+                <li>Aditi Dey Tithi (Cousin) - Assistant Researcher, Rensselaer Polytechnic Institute, New York, USA (The visionary who made her escape Bangladesh before we even knew we should.)</li>
             </ul>
         </div>
 
@@ -124,8 +130,9 @@
             <h2>What I Do When I'm Not Working</h2>
             <p>When I'm not solving complex algorithms or debugging my life choices, you can find me:</p>
             <ul>
-                <li><strong>Coding:</strong> Building apps that solve problems nobody knew they had.</li>
-                <li><strong>Playing Chess:</strong> Strategizing my next move in life, one pawn at a time.</li>
+                <li><strong>Coding:</strong> Writing code that finds problems before you do.</li>
+                <li><strong>Playing Chess:</strong> Strategizing my next move in life, one pawn at a time. 
+                    <br>Peak Lichess blitz rating: 1446 (<a href="https://lichess.org/@/anikdeyshaon" target="_blank">View Profile</a>)</li>
                 <li><strong>Reading Books:</strong> From sci-fi to philosophy—escaping reality one page at a time.</li>
             </ul>
         </div>
@@ -139,9 +146,12 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Anik Dey Shaon. All rights reserved.</p>
+        <p>© 2025 Anik Dey Shaon. All rights reserved.</p>
     </footer>
 
+    <!-- Fancybox JS for lightbox -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
