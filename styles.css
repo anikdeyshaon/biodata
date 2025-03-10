@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', 'Arial', sans-serif;
     background-color: #FFDAB9; /* Soft Peach */
@@ -80,6 +86,16 @@ p, li {
 /* Achievements Carousel */
 .achievements-grid {
     display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 10px; /* Consistent gap between items */
+    scroll-snap-type: x mandatory; /* Snap to each item */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    width: 100%; /* Ensure it takes full container width */
+    padding: 10px 0; /* Optional padding for better spacing */
+}
+/*
+.achievements-grid {
+    display: flex;
     overflow-x: scroll;
     gap: 25px;
     margin-top: 25px;
@@ -87,7 +103,14 @@ p, li {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 }
-
+    */
+.achievement-item {
+    flex: 0 0 auto; /* Prevent shrinking and allow fixed width */
+    width: 80vw; /* 80% of viewport width for mobile */
+    max-width: 300px; /* Cap width for larger screens */
+    scroll-snap-align: center; /* Center each item when scrolling */
+}
+/*
 .achievement-item {
     min-width: 280px;
     flex-shrink: 0;
@@ -99,10 +122,12 @@ p, li {
     scroll-snap-align: start;
 }
 
+
 .achievement-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .achievement-item img {
     width: 100%;
@@ -111,6 +136,15 @@ p, li {
     border-radius: 10px;
     margin-bottom: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+*/
+
+.achievement-item img {
+    width: 100%; /* Fill the item’s width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Limit height, adjust as needed */
+    object-fit: contain; /* Ensure full image visibility */
+    display: block; /* Remove any inline spacing issues */
 }
 
 /* Contact Info */
@@ -248,6 +282,11 @@ ul li:before {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+
+    .achievement-item {
+        width: 280px; /* Fixed width for desktop */
+    }
+
     .container {
         margin: 20px 10px;
         padding: 20px;
