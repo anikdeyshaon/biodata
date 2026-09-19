@@ -64,6 +64,27 @@ p, li {
     color: #6B7A47;
 }
 
+.status-badge {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto 18px;
+  align-items: center;
+  gap: 9px;
+  background: #204531;
+  color: #f1ead6;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.status-badge svg {
+  flex-shrink: 0;
+}
+.status-badge .status-sep {
+  opacity: 0.55;
+  font-weight: 400;
+}
+
 /* Timeline */
 .timeline {
     position: relative;
